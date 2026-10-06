@@ -1,4 +1,4 @@
-﻿# ROSHAYN
+# ROSHAYN
 
 Small finds. Big energy.
 
@@ -24,7 +24,7 @@ The public website is in site/. It is plain HTML, CSS, JavaScript, and local ass
 
 Enable Settings → Pages → Source: GitHub Actions. The included Pages workflow deploys only site/ after a push to main or a manual workflow run.
 
-Intended address: https://robertpelo23.github.io/roshayn/ . This address should be treated as live only after GitHub Pages deployment succeeds and the site is verified.
+Live address: https://am1va.github.io/roshayn/ . The account was renamed from robertpelo23 to am1va on 2026-10-07; the new address returns HTTP 200.
 
 Deployment follows GitHub's documented workflow:
 https://docs.github.com/en/get-started/start-your-journey/deploying-your-website-automatically
