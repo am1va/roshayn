@@ -13,6 +13,7 @@ An original responsive marketplace portfolio with 100 product concepts, real loc
 - Desktop and mobile navigation and layouts.
 - One-second featured-product carousel with the original pop transition, side arrows, and five compact navigation dots; all 100 products are accessible.
 - Purple hover/focus feedback on category tiles and carousel arrows. Reduced-motion preferences disable carousel autoplay and movement; manual navigation remains available.
+- A slow, continuous product ribbon moving left to right through all 100 catalog items, with photos, names, prices, clickable details and native horizontal browsing/swiping.
 
 ## Scope
 

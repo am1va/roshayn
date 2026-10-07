@@ -91,6 +91,26 @@
 @media(prefers-reduced-motion:reduce){.hero-product.is-entering{animation:none}}
 
 /* Browse the expanded catalog in manageable batches on every viewport. */
+/* Slow right-moving ribbon: one real button for each of the 100 products. */
+.edit-banner{gap:22px;overflow:hidden}
+.edit-intro{flex:0 0 310px;min-width:0}
+.deal-preview.ribbon-viewport{display:block;flex:1 1 0;min-width:0;overflow-x:auto;overflow-y:hidden;padding:8px 0;border-radius:11px;scrollbar-width:none;overflow-anchor:none;mask-image:linear-gradient(to right,transparent,#000 10px,#000 calc(100% - 10px),transparent)}
+.ribbon-viewport::-webkit-scrollbar{display:none}
+.ribbon-viewport:focus-visible{outline:2px solid var(--violet);outline-offset:3px}
+.ribbon-track{display:flex;gap:12px;width:max-content;overflow-anchor:none}
+.ribbon-viewport.is-gliding .ribbon-track{will-change:transform}
+.deal-preview .ribbon-track>.deal-mini:nth-child(n){display:flex;flex:0 0 174px;width:174px;height:74px;gap:9px;padding:8px;border:1px solid #e5e9df;transition:border-color .2s,box-shadow .2s}
+.deal-preview .ribbon-track>.deal-mini:hover,.deal-preview .ribbon-track>.deal-mini:focus-visible{border-color:var(--violet);box-shadow:0 3px 9px #7058db1a}
+.deal-preview .deal-mini img{width:52px;height:52px;flex-shrink:0;border-radius:7px}
+.ribbon-copy{display:flex;flex-direction:column;gap:6px;min-width:0;flex:1}
+.ribbon-name{font-size:10px;line-height:1.3;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:26px;color:var(--navy)}
+.ribbon-prices{display:flex;align-items:baseline;gap:5px;white-space:nowrap}
+.deal-preview .ribbon-prices strong{font-size:12px}
+.deal-preview .ribbon-prices del{font-size:8px}
+.edit-banner>.text-button{flex-shrink:0}
+@media(max-width:1100px){.edit-intro{flex-basis:270px}.edit-banner{gap:16px}}
+@media(max-width:700px){.edit-intro{flex-basis:100%}.deal-preview.ribbon-viewport{flex-basis:100%;order:2}.edit-banner>.text-button{order:3;margin-left:auto}.deal-preview .ribbon-track>.deal-mini:nth-child(n){width:166px;flex-basis:166px;height:72px}.deal-preview .deal-mini img{width:48px;height:48px}.ribbon-track{gap:10px}.edit-banner{gap:10px}}
+
 /* Consistent purple feedback for category tiles and carousel arrows. */
 .category-tile{transition:border-color .2s,box-shadow .2s,transform .2s}
 .category-tile:hover,.category-tile:focus-visible{border-color:var(--violet);box-shadow:0 6px 18px #7957fe14;transform:translateY(-2px)}
