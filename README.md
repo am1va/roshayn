@@ -11,6 +11,8 @@ An original responsive marketplace portfolio with 100 product concepts, real loc
 - Full-catalog search, filters, sorting, favorites, and 24-item browsing batches.
 - Shopping-bag quantities, an illustrative voucher, simulated checkout, and browser-local demo receipts.
 - Desktop and mobile navigation and layouts.
+- One-second featured-product carousel with the original pop transition, side arrows, and five compact navigation dots; all 100 products are accessible.
+- Purple hover/focus feedback on category tiles and carousel arrows. Reduced-motion preferences disable carousel autoplay and movement; manual navigation remains available.
 
 ## Scope
 
